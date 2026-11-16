@@ -14,6 +14,8 @@ import masterProgramming from './assets/projects/master-programming.jpg'
 import risansCeremony from './assets/projects/risans-ceremony.jpg'
 import typingMaster from './assets/projects/typing-master.jpg'
 import creativeBrain from './assets/projects/creative-brain.jpg'
+import skyshift from './assets/projects/skyshift.jpg'
+import skyshiftPromo from './assets/projects/skyshift-promo.mp4'
 
 export const profile = {
   name: 'Lalon Rahman Tirtha',
@@ -159,6 +161,19 @@ export const skills = [
 ]
 
 export const projects = [
+  {
+    title: 'SkyShift',
+    year: '2026',
+    featured: true,
+    image: skyshift,
+    // Optional promo video: plays in place of the screenshot, with `image` as its poster.
+    video: skyshiftPromo,
+    summary:
+      "See what moves in the sky. SkyShift pulls small cutouts of any sky position from NASA's SPHEREx mission, aligns them and plays the visits back like a film, so nearby stars and brown dwarfs drifting against the background stand out — or subtracts one image from another so motion lights up. Click any object to measure its 0.75–5 µm spectrum across all six detectors and to check whether it is already known in SIMBAD, ESA's Gaia DR3 and the IMCCE SkyBoT asteroid list. No coordinates needed: step to the patch next door or jump to a random patch of sky.",
+    tech: ['Python', 'FastAPI', 'Astropy', 'NumPy', 'SciPy', 'JavaScript', 'Canvas', 'Vercel'],
+    live: 'https://skyshift-weld.vercel.app',
+    code: 'https://github.com/lalon147/skyshift',
+  },
   {
     title: 'SmashQuote',
     year: '2026',

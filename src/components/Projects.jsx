@@ -35,9 +35,26 @@ function Featured({ p, flip }) {
       className="aspect-[16/10] w-full object-cover object-top transition duration-500 group-hover:scale-[1.03]"
     />
   )
+  const media = p.video ? (
+    <div className="overflow-hidden rounded-xl border border-border bg-black">
+      <video
+        src={p.video}
+        poster={p.image}
+        controls
+        playsInline
+        preload="none"
+        aria-label={`${p.title} promo video`}
+        className="aspect-video w-full"
+      />
+    </div>
+  ) : href ? (
+    <a href={href} target="_blank" rel="noreferrer" className={frame}>{img}</a>
+  ) : (
+    <div className={frame}>{img}</div>
+  )
   return (
     <article className={`grid items-center gap-8 md:grid-cols-2 ${flip ? 'md:[&>*:first-child]:order-2' : ''}`}>
-      {href ? <a href={href} target="_blank" rel="noreferrer" className={frame}>{img}</a> : <div className={frame}>{img}</div>}
+      {media}
       <div>
         <p className="font-mono text-xs text-accent">Featured · {p.year}</p>
         <h3 className="mt-1 text-2xl font-bold">{p.title}</h3>
