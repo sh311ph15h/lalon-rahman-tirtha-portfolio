@@ -18,6 +18,8 @@ import skyshift from './assets/projects/skyshift.jpg'
 import skyshiftPromo from './assets/projects/skyshift-promo.mp4'
 import mbsmashDemo from './assets/projects/mbsmash-demo.mp4'
 import typingMasterDemo from './assets/projects/typing-master-demo.mp4'
+import goalpathDemo from './assets/projects/goalpath-demo.mp4'
+import masterProgrammingDemo from './assets/projects/master-programming-demo.mp4'
 import aussiecars from './assets/projects/aussiecars.jpg'
 import aussiecarsPromo from './assets/projects/aussiecars-promo.mp4'
 
@@ -219,6 +221,7 @@ export const projects = [
     year: '2026',
     featured: true,
     image: goalpath,
+    video: goalpathDemo,
     summary:
       'Cross-platform goal and habit tracker: set milestones, keep streaks, and watch progress on a live analytics dashboard with AI-generated coaching. React Native/Expo mobile app and React web client sharing one Express + MongoDB API with JWT auth, rate limiting and validation.',
     tech: ['React Native', 'Expo', 'React', 'Redux Toolkit', 'Express', 'MongoDB', 'JWT', 'Claude API'],
@@ -240,6 +243,7 @@ export const projects = [
     title: 'Master Programming',
     year: '2022',
     image: masterProgramming,
+    video: masterProgrammingDemo,
     summary:
       'Online course platform. Admins add courses and verify instructors, students enrol and download course modules as PDF, and purchase statistics are charted with Recharts.',
     tech: ['React', 'Firebase', 'Express', 'MongoDB', 'Recharts', 'react-pdf', 'DaisyUI'],
