@@ -16,6 +16,8 @@ import typingMaster from './assets/projects/typing-master.jpg'
 import creativeBrain from './assets/projects/creative-brain.jpg'
 import skyshift from './assets/projects/skyshift.jpg'
 import skyshiftPromo from './assets/projects/skyshift-promo.mp4'
+import aussiecars from './assets/projects/aussiecars.jpg'
+import aussiecarsPromo from './assets/projects/aussiecars-promo.mp4'
 
 export const profile = {
   name: 'Lalon Rahman Tirtha',
@@ -173,6 +175,19 @@ export const projects = [
     tech: ['Python', 'FastAPI', 'Astropy', 'NumPy', 'SciPy', 'JavaScript', 'Canvas', 'Vercel'],
     live: 'https://skyshift-weld.vercel.app',
     code: 'https://github.com/lalon147/skyshift',
+  },
+  {
+    title: 'Aussie Cars',
+    year: '2026',
+    featured: true,
+    image: aussiecars,
+    video: aussiecarsPromo,
+    summary:
+      'Marketplace for buying and selling used cars in Australia, rebuilt from the ground up from my 2022 Sekhanei project. Buyers search with filters that live in the URL, see a price-vs-market deal rating and a finance estimate on every listing, save cars, message sellers and book test drives. Sellers list through a guided form with a free valuation, and admins moderate listings and users. Server Components and Server Actions on Next.js 16, with Prisma on PostgreSQL and role-based sign-in through NextAuth. The live link is a demo with sample listings.',
+    tech: ['Next.js 16', 'React 19', 'TypeScript', 'Prisma', 'PostgreSQL', 'NextAuth', 'Tailwind CSS', 'shadcn/ui', 'Zod', 'Vercel'],
+    live: 'https://aussie-cars.vercel.app',
+    liveLabel: 'Live demo',
+    code: 'https://github.com/lalon147/sekhanei-dot-com/tree/nextjs-rewrite',
   },
   {
     title: 'SmashQuote',
