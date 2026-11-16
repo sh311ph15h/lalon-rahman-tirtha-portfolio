@@ -20,6 +20,7 @@ import mbsmashDemo from './assets/projects/mbsmash-demo.mp4'
 import typingMasterDemo from './assets/projects/typing-master-demo.mp4'
 import goalpathDemo from './assets/projects/goalpath-demo.mp4'
 import masterProgrammingDemo from './assets/projects/master-programming-demo.mp4'
+import smashquoteDemo from './assets/projects/smashquote-demo.mp4'
 import aussiecars from './assets/projects/aussiecars.jpg'
 import aussiecarsPromo from './assets/projects/aussiecars-promo.mp4'
 
@@ -198,6 +199,7 @@ export const projects = [
     year: '2026',
     featured: true,
     image: smashquote,
+    video: smashquoteDemo,
     summary:
       'Multi-tenant quoting and estimating platform for smash repair shops. Each shop is an isolated tenant behind Postgres Row-Level Security; the quote builder mixes parts, paint, labour and sublet lines with live GST totals computed by a DB trigger, and produces a printable A4 quote with the shop letterhead. Vehicle photos upload straight from the browser to Cloudflare R2 via presigned URLs.',
     tech: ['Next.js', 'React', 'Supabase', 'PostgreSQL', 'Row-Level Security', 'Cloudflare R2', 'Tailwind'],
