@@ -13,7 +13,7 @@ export function Contact() {
           </p>
           <ul className="mt-8 space-y-4">
             <li><a className={row} href={profile.social.linkedin} target="_blank" rel="noreferrer"><FaLinkedin className="text-accent" /> linkedin.com/in/lalon-rahman-tirtha</a></li>
-            <li><a className={row} href={profile.social.github} target="_blank" rel="noreferrer"><FaGithub className="text-accent" /> github.com/lalon147</a></li>
+            <li><a className={row} href={profile.social.github} target="_blank" rel="noreferrer"><FaGithub className="text-accent" /> github.com/sh311ph15h</a></li>
             <li><a className={row} href={profile.resume} download><FaFileDownload className="text-accent" /> Download resume (PDF)</a></li>
           </ul>
         </div>

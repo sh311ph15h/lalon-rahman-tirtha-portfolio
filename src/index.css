@@ -61,6 +61,12 @@ body {
   transition: transform .2s ease-out, border-color .2s;
 }
 
+/* 3D project ring (Projects.jsx) */
+.orbit-ring { transform-style: preserve-3d; transition: transform .8s cubic-bezier(.22,.8,.26,1); }
+.orbit-ring.is-dragging { transition: none; }
+.orbit-card { backface-visibility: hidden; transition: opacity .5s, border-color .3s, box-shadow .3s; }
+.orbit-detail { animation: rise .45s ease-out; }
+
 .reveal { opacity: 0; }
 .reveal.in { animation: rise .6s ease-out forwards; }
 
@@ -69,5 +75,7 @@ body {
   .reveal.in { animation: none; }
   .caret::after { animation: none; }
   .tilt { transform: none; }
+  .orbit-ring { transition: none; }
+  .orbit-detail { animation: none; }
   html { scroll-behavior: auto; }
 }

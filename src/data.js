@@ -16,6 +16,8 @@ import typingMaster from './assets/projects/typing-master.jpg'
 import creativeBrain from './assets/projects/creative-brain.jpg'
 import skyshift from './assets/projects/skyshift.jpg'
 import skyshiftPromo from './assets/projects/skyshift-promo.mp4'
+import mbsmashDemo from './assets/projects/mbsmash-demo.mp4'
+import typingMasterDemo from './assets/projects/typing-master-demo.mp4'
 import aussiecars from './assets/projects/aussiecars.jpg'
 import aussiecarsPromo from './assets/projects/aussiecars-promo.mp4'
 
@@ -36,7 +38,7 @@ export const profile = {
   ],
   interests: ['Penetration Testing', 'Active Directory Security', 'Network Defence', 'Web App Security', 'Cloud Security', 'AI & Machine Learning'],
   social: {
-    github: 'https://github.com/lalon147',
+    github: 'https://github.com/sh311ph15h',
     linkedin: 'https://www.linkedin.com/in/lalon-rahman-tirtha/',
   },
 }
@@ -174,7 +176,7 @@ export const projects = [
       "See what moves in the sky. SkyShift pulls small cutouts of any sky position from NASA's SPHEREx mission, aligns them and plays the visits back like a film, so nearby stars and brown dwarfs drifting against the background stand out — or subtracts one image from another so motion lights up. Click any object to measure its 0.75–5 µm spectrum across all six detectors and to check whether it is already known in SIMBAD, ESA's Gaia DR3 and the IMCCE SkyBoT asteroid list. No coordinates needed: step to the patch next door or jump to a random patch of sky.",
     tech: ['Python', 'FastAPI', 'Astropy', 'NumPy', 'SciPy', 'JavaScript', 'Canvas', 'Vercel'],
     live: 'https://skyshift-weld.vercel.app',
-    code: 'https://github.com/lalon147/skyshift',
+    code: 'https://github.com/sh311ph15h/skyshift',
   },
   {
     title: 'Aussie Cars',
@@ -187,7 +189,7 @@ export const projects = [
     tech: ['Next.js 16', 'React 19', 'TypeScript', 'Prisma', 'PostgreSQL', 'NextAuth', 'Tailwind CSS', 'shadcn/ui', 'Zod', 'Vercel'],
     live: 'https://aussie-cars.vercel.app',
     liveLabel: 'Live demo',
-    code: 'https://github.com/lalon147/sekhanei-dot-com/tree/nextjs-rewrite',
+    code: 'https://github.com/sh311ph15h/sekhanei-dot-com/tree/nextjs-rewrite',
   },
   {
     title: 'SmashQuote',
@@ -197,18 +199,20 @@ export const projects = [
     summary:
       'Multi-tenant quoting and estimating platform for smash repair shops. Each shop is an isolated tenant behind Postgres Row-Level Security; the quote builder mixes parts, paint, labour and sublet lines with live GST totals computed by a DB trigger, and produces a printable A4 quote with the shop letterhead. Vehicle photos upload straight from the browser to Cloudflare R2 via presigned URLs.',
     tech: ['Next.js', 'React', 'Supabase', 'PostgreSQL', 'Row-Level Security', 'Cloudflare R2', 'Tailwind'],
+    code: 'https://github.com/sh311ph15h/smashquote',
   },
   {
     title: 'MB Smash Repair',
     year: '2026',
     featured: true,
     image: mbsmash,
+    video: mbsmashDemo,
     summary:
       'Parts management and ordering system in daily use at a real Australian smash repair shop. Staff order every part for every car through it, chase overdue deliveries and reconcile invoices into stock — by the owner\'s estimate around $20,000 of parts orders a week. Next.js on PostgreSQL with signed sessions, login throttling and a full change log; ships as an installable Android app via Trusted Web Activity. The live link opens an interactive demo with sample data — the production system stays private.',
     tech: ['Next.js', 'React', 'PostgreSQL', 'Lucide', 'Vercel', 'Android TWA'],
     live: 'https://mbsmash-demo.netlify.app',
     liveLabel: 'Live demo',
-    code: 'https://github.com/lalon147/mbsmash',
+    code: 'https://github.com/sh311ph15h/mbsmash',
   },
   {
     title: 'GoalPath (LOCKED IN)',
@@ -219,7 +223,7 @@ export const projects = [
       'Cross-platform goal and habit tracker: set milestones, keep streaks, and watch progress on a live analytics dashboard with AI-generated coaching. React Native/Expo mobile app and React web client sharing one Express + MongoDB API with JWT auth, rate limiting and validation.',
     tech: ['React Native', 'Expo', 'React', 'Redux Toolkit', 'Express', 'MongoDB', 'JWT', 'Claude API'],
     live: 'https://goalpath-web.vercel.app',
-    code: 'https://github.com/lalon147/goalpath',
+    code: 'https://github.com/sh311ph15h/goalpath',
   },
   {
     title: 'Sekhanei Dot Com',
@@ -229,8 +233,8 @@ export const projects = [
       'Marketplace for buying and selling used cars with three roles — admin, buyer and seller. Admin can verify or remove users, sellers list cars, buyers pay via Stripe. Firebase auth with JWT-protected API routes and TanStack Query on the client.',
     tech: ['React', 'Firebase', 'Express', 'MongoDB', 'Stripe', 'TanStack Query', 'JWT', 'DaisyUI'],
     live: 'https://radiant-bavarois-69018a.netlify.app',
-    code: 'https://github.com/lalon147/sekhanei-dot-com',
-    server: 'https://github.com/lalon147/sekhanei-server',
+    code: 'https://github.com/sh311ph15h/sekhanei-dot-com',
+    server: 'https://github.com/sh311ph15h/sekhanei-server',
   },
   {
     title: 'Master Programming',
@@ -240,8 +244,8 @@ export const projects = [
       'Online course platform. Admins add courses and verify instructors, students enrol and download course modules as PDF, and purchase statistics are charted with Recharts.',
     tech: ['React', 'Firebase', 'Express', 'MongoDB', 'Recharts', 'react-pdf', 'DaisyUI'],
     live: 'https://master-programming-e5574.firebaseapp.com',
-    code: 'https://github.com/lalon147/master-programming-project',
-    server: 'https://github.com/lalon147/master-programming-server',
+    code: 'https://github.com/sh311ph15h/master-programming-project',
+    server: 'https://github.com/sh311ph15h/master-programming-server',
   },
   {
     title: "Risan's Ceremony",
@@ -251,17 +255,18 @@ export const projects = [
       "Service-review site for an event manager (weddings, birthdays, occasions). Logged-in users can add services and create, edit or delete reviews; Firebase auth plus JWT authorisation and paginated data fetching.",
     tech: ['React', 'Firebase', 'Express', 'MongoDB', 'JWT'],
     live: 'https://the-urban-luxary.web.app',
-    code: 'https://github.com/lalon147/service-review-client',
-    server: 'https://github.com/lalon147/service-review-server',
+    code: 'https://github.com/sh311ph15h/service-review-client',
+    server: 'https://github.com/sh311ph15h/service-review-server',
   },
   {
     title: 'Typing Master',
     year: '2022',
     image: typingMaster,
+    video: typingMasterDemo,
     summary: 'A small React app for practising and measuring typing speed and accuracy.',
     tech: ['React', 'JavaScript'],
-    live: 'https://lalon147.github.io/typing-master/',
-    code: 'https://github.com/lalon147/typing-master',
+    live: 'https://sh311ph15h.github.io/typing-master/',
+    code: 'https://github.com/sh311ph15h/typing-master',
   },
   {
     title: 'Creative Brain',
@@ -269,6 +274,6 @@ export const projects = [
     image: creativeBrain,
     summary: 'Quiz platform for testing your knowledge of React, Git, HTML and CSS, with instant answer feedback.',
     tech: ['React', 'React Router', 'Bootstrap'],
-    code: 'https://github.com/lalon147/creative-brain',
+    code: 'https://github.com/sh311ph15h/creative-brain',
   },
 ]
