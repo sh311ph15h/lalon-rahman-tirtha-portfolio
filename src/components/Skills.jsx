@@ -1,5 +1,5 @@
 import { Section } from './Section'
-import { SkillSphere } from './SkillSphere'
+import { SkillSphere, Abbr } from './SkillSphere'
 import { skills } from '../data'
 
 // Tilt the card toward the pointer; CSS vars feed the transform in index.css (.tilt).
@@ -30,12 +30,14 @@ export function Skills() {
           >
             <h3 className="mb-4 font-mono text-sm uppercase tracking-wider text-muted">{group}</h3>
             <ul className="flex flex-wrap gap-2">
-              {items.map(({ name, icon: Icon }) => (
+              {items.map(({ name, icon: Icon, abbr }) => (
                 <li
                   key={name}
                   className="flex items-center gap-2 rounded-md border border-border bg-surface-2 px-3 py-1.5 text-sm transition hover:border-accent/50"
                 >
-                  {Icon && <Icon className="text-xl text-accent" aria-hidden />}
+                  {Icon ? <Icon className="text-xl text-accent" aria-hidden /> : abbr && (
+                    <span aria-hidden className="flex h-5 min-w-5 items-center justify-center rounded bg-accent/15 px-1 text-accent"><Abbr text={abbr} /></span>
+                  )}
                   {name}
                 </li>
               ))}

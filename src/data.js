@@ -3,8 +3,10 @@
 //  site — no need to touch the components.
 // ─────────────────────────────────────────────────────────────
 
-import { SiBurpsuite, SiGnubash, SiHackthebox, SiOwasp, SiPfsense, SiPython, SiTryhackme, SiUbuntu, SiCss, SiExpo, SiExpress, SiFigma, SiFirebase, SiGit, SiGithub, SiHtml5, SiJavascript, SiJsonwebtokens, SiKalilinux, SiLinux, SiMetasploit, SiMongodb, SiNetlify, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVercel, SiWireshark } from 'react-icons/si'
-import { FaFlag, FaNetworkWired, FaPhoneAlt, FaSearch, FaShieldAlt, FaTerminal } from 'react-icons/fa'
+import { SiSplunk, SiSnort, SiElasticstack, SiVirustotal, SiHashcat, SiDocker, SiVirtualbox, SiBurpsuite, SiGnubash, SiHackthebox, SiOwasp, SiPfsense, SiPython, SiTryhackme, SiUbuntu, SiCss, SiExpo, SiExpress, SiFigma, SiFirebase, SiGit, SiGithub, SiHtml5, SiJavascript, SiJsonwebtokens, SiKalilinux, SiLinux, SiMetasploit, SiMongodb, SiNetlify, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVercel, SiWireshark } from 'react-icons/si'
+import { FaAws, FaChartLine, FaShieldVirus, FaWindows, FaMemory, FaUserNinja, FaRoute, FaFlag, FaNetworkWired, FaPhoneAlt, FaSearch, FaShieldAlt, FaTerminal } from 'react-icons/fa'
+import { GiSteak, GiSniffingDog, GiKiwiFruit, GiHydra } from 'react-icons/gi'
+import { VscAzure } from 'react-icons/vsc'
 import photo from './assets/avatar.jpg'
 import smashquote from './assets/projects/smashquote.jpg'
 import mbsmash from './assets/projects/mbsmash.jpg'
@@ -28,7 +30,7 @@ export const profile = {
   name: 'Lalon Rahman Tirtha',
   firstName: 'Lalon',
   title: 'Offensive Security & Penetration Testing',
-  roles: ['Aspiring Penetration Tester', 'Offensive Security Practitioner'],
+  roles: ['Penetration Tester', 'Offensive Security Practitioner'],
   quote: 'The Best Defense is Offense',
   photo,
   // Public copy: no address, phone or email — visitors reach out through the contact form.
@@ -97,6 +99,8 @@ export const gallery = [
 ]
 
 // Icons come from react-icons (https://react-icons.github.io/react-icons) — import them above.
+// Each item has a brand/symbol `icon`, or a short `abbr` shown as a text badge
+// where no logo exists.
 export const skills = [
   {
     group: 'Offensive Security',
@@ -104,7 +108,7 @@ export const skills = [
       { name: 'Kali Linux', icon: SiKalilinux },
       { name: 'Nmap', icon: FaNetworkWired },
       { name: 'Burp Suite', icon: SiBurpsuite },
-      { name: 'Metasploit', icon: SiMetasploit },
+      { name: 'Metasploit Framework', icon: SiMetasploit },
       { name: 'Recon & OSINT', icon: FaSearch },
       { name: 'OWASP Top 10', icon: SiOwasp },
       { name: 'Hack The Box', icon: SiHackthebox },
@@ -113,14 +117,60 @@ export const skills = [
     ],
   },
   {
-    group: 'Network & Defence',
+    group: 'Web App Testing',
     items: [
-      { name: 'pfSense', icon: SiPfsense },
+      { name: 'Gobuster', abbr: 'gob' },
+      { name: 'DirBuster', abbr: 'dirb' },
+      { name: 'ffuf', abbr: 'ffuf' },
+      { name: 'sqlmap', abbr: 'sqli' },
+      { name: 'Nikto', abbr: 'nikto' },
+      { name: 'BeEF', icon: GiSteak },
+    ],
+  },
+  {
+    group: 'Active Directory & Post-Exploitation',
+    items: [
+      { name: 'BloodHound', icon: GiSniffingDog },
+      { name: 'Mimikatz', icon: GiKiwiFruit },
+      { name: 'Responder', abbr: 'resp' },
+      { name: 'Impacket', abbr: 'imp' },
+      { name: 'PowerShell Empire', icon: FaUserNinja },
+      { name: 'Hashcat', icon: SiHashcat },
+      { name: 'John the Ripper', abbr: 'john' },
+      { name: 'Hydra', icon: GiHydra },
+      { name: 'LinPEAS / WinPEAS', abbr: 'peas' },
+    ],
+  },
+  {
+    group: 'Defence & Blue Team',
+    items: [
+      { name: 'Splunk Enterprise', icon: SiSplunk },
+      { name: 'SIEM', icon: FaChartLine },
+      { name: 'EDR', icon: FaShieldVirus },
+      { name: 'Snort IDS', icon: SiSnort },
+      { name: 'Suricata', abbr: 'sur' },
+      { name: 'Wazuh', abbr: 'wz' },
+      { name: 'Elastic Stack', icon: SiElasticstack },
       { name: 'Wireshark', icon: SiWireshark },
-      { name: 'Network segmentation', icon: FaNetworkWired },
+      { name: 'Sysmon', icon: FaWindows },
+      { name: 'Volatility', icon: FaMemory },
+      { name: 'YARA', abbr: 'yara' },
+      { name: 'VirusTotal', icon: SiVirustotal },
+      { name: 'MITRE ATT&CK', abbr: 'att&ck' },
+      { name: 'pfSense', icon: SiPfsense },
+      { name: 'Network segmentation', icon: FaRoute },
       { name: 'Linux hardening', icon: SiLinux },
       { name: 'Ubuntu Server', icon: SiUbuntu },
       { name: 'Log & traffic analysis', icon: FaTerminal },
+    ],
+  },
+  {
+    group: 'Cloud & Lab',
+    items: [
+      { name: 'AWS', icon: FaAws },
+      { name: 'Azure', icon: VscAzure },
+      { name: 'Docker', icon: SiDocker },
+      { name: 'VirtualBox', icon: SiVirtualbox },
     ],
   },
   {
