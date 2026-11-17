@@ -27,17 +27,18 @@ import aussiecarsPromo from './assets/projects/aussiecars-promo.mp4'
 export const profile = {
   name: 'Lalon Rahman Tirtha',
   firstName: 'Lalon',
-  title: 'Cyber Security & Full-Stack Developer',
-  roles: ['Aspiring Penetration Tester', 'Security-Focused Developer', 'CTF Player', 'Full-Stack Developer'],
+  title: 'Offensive Security & Penetration Testing',
+  roles: ['Aspiring Penetration Tester', 'Offensive Security Practitioner'],
+  quote: 'The Best Defense is Offense',
   photo,
   // Public copy: no address, phone or email — visitors reach out through the contact form.
   resume: '/Lalon-Rahman-Tirtha-Resume.pdf',
   tagline:
-    "I break things to learn how to protect them — recon, enumeration and exploitation in the lab, hardened firewalls and servers at home — and I bring that attacker's view to the production apps I build.",
+    "I break things to learn how to protect them — recon, enumeration and exploitation in the lab, hardened firewalls and servers at home — and I bring that attacker's view to every system I defend.",
   about: [
     "I've been training on the offensive side of security since 2019: Hack The Box and TryHackMe machines worked end to end — reconnaissance, enumeration, exploitation, privilege escalation — with written walkthroughs. I've completed the TryHackMe Jr Penetration Tester path and I'm working through TCM Security's PNPT, including Active Directory attacks and lateral movement.",
     'I also build and defend real infrastructure: a segmented network behind a pfSense firewall (on-premises and on Azure) and a hardened VoIP/PBX server, kept patched, access-reviewed and scanned from the outside.',
-    "My background is full-stack development, and I still ship production software — including a parts-management system a Melbourne repair shop runs on every day. Knowing how applications are built makes me better at finding where they break, and it means auth, input validation and rate limiting come before the first line of any feature.",
+    "My focus is offensive security: thinking like an attacker so I can find the weaknesses before someone else does.",
   ],
   interests: ['Penetration Testing', 'Active Directory Security', 'Network Defence', 'Web App Security', 'Cloud Security', 'AI & Machine Learning'],
   social: {

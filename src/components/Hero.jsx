@@ -26,6 +26,10 @@ export function Hero() {
             <span className="caret" aria-hidden="true">{role}</span>
           </p>
 
+          <blockquote className="mt-5 border-l-2 border-accent pl-4 font-mono text-lg font-semibold italic text-accent sm:text-xl">
+            “{profile.quote}”
+          </blockquote>
+
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">{profile.tagline}</p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
