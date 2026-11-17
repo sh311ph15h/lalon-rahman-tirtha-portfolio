@@ -183,7 +183,7 @@ export const skills = [
     ],
   },
   {
-    group: 'Full-Stack Development',
+    group: 'Web Development',
     items: [
       { name: 'React', icon: SiReact },
       { name: 'Next.js', icon: SiNextdotjs },

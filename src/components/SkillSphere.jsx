@@ -3,7 +3,7 @@ import { skills } from '../data'
 
 // One bubble per skill, spread evenly over a sphere (Fibonacci lattice).
 // The globe shows the security toolkit; the development stack stays in the cards below.
-const DEV_GROUPS = new Set(['Full-Stack Development', 'Data & Auth', 'Tools & Cloud'])
+const DEV_GROUPS = new Set(['Web Development', 'Data & Auth', 'Tools & Cloud'])
 const items = []
 const seen = new Set()
 for (const { group: g, items: group } of skills) {
