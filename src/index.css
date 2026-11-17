@@ -79,3 +79,8 @@ body {
   .orbit-detail { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* Animated traffic on the AD lab map */
+.ad-flow { animation: ad-flow 1.4s linear infinite; }
+@keyframes ad-flow { to { stroke-dashoffset: -24; } }
+@media (prefers-reduced-motion: reduce) { .ad-flow { animation: none; } }

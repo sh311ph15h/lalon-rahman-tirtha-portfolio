@@ -1,19 +1,36 @@
 import { FaCheckCircle, FaHourglassHalf } from 'react-icons/fa'
 import { Section } from './Section'
+import { LabCaseFiles } from './LabCaseFiles'
+import { AdLabMap } from './AdLabMap'
+import { ReviewCard } from './ReviewCard'
 import { certifications, securityWork } from '../data'
+
+// The lab cards are now shown as case files; keep the infrastructure builds as compact cards.
+const builds = securityWork.filter((w) => /pfSense|VoIP/.test(w.title))
 
 export function Security() {
   return (
     <Section id="security" eyebrow="security" title="Security work">
-      <div className="grid gap-6 md:grid-cols-2">
-        {securityWork.map(({ title, icon: Icon, summary, tags }) => (
-          <article key={title} className="flex flex-col rounded-xl border border-border bg-surface p-6 transition hover:border-accent/50">
+      <p className="-mt-6 mb-8 max-w-2xl text-muted">
+        Pick a case file, or let it play: what I found, how the attack unfolded mapped to MITRE ATT&amp;CK, and how to fix it.
+      </p>
+
+      <LabCaseFiles />
+
+      <div className="mt-6 grid gap-6 md:grid-cols-2">
+        <AdLabMap />
+        <ReviewCard />
+      </div>
+
+      <div className="mt-6 grid gap-6 md:grid-cols-2">
+        {builds.map(({ title, icon: Icon, summary, tags }) => (
+          <article key={title} className="flex flex-col rounded-xl border border-border bg-surface p-5 transition hover:border-accent/50">
             <div className="flex items-center gap-3">
-              <Icon className="text-2xl text-accent" aria-hidden />
-              <h3 className="text-lg font-bold">{title}</h3>
+              <Icon className="text-xl text-accent" aria-hidden />
+              <h3 className="font-bold">{title}</h3>
             </div>
-            <p className="mt-3 flex-1 leading-relaxed text-muted">{summary}</p>
-            <ul className="mt-4 flex flex-wrap gap-1.5">
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{summary}</p>
+            <ul className="mt-3 flex flex-wrap gap-1.5">
               {tags.map((t) => (
                 <li key={t} className="rounded bg-surface-2 px-2 py-0.5 font-mono text-xs text-muted">{t}</li>
               ))}
